@@ -8,6 +8,8 @@ import tailwindcss from '@tailwindcss/vite'
 const page = (dir: string) => resolve(__dirname, dir, 'index.html')
 
 export default defineConfig({
+  /* '/' locally; the GitHub Pages workflow sets BASE_PATH to the repo path. */
+  base: process.env.BASE_PATH || '/',
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {

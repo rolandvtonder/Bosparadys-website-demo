@@ -26,15 +26,22 @@ export const waLink = (text?: string) =>
 export const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(VENUE.mapsQuery)}`
 export const mapsEmbed = `https://maps.google.com/maps?q=${encodeURIComponent(VENUE.mapsQuery)}&z=13&output=embed`
 
+/*
+  Where the site lives. Locally that is the domain root; on GitHub Pages it is
+  /Bosparadys-website-demo/ (set by BASE_PATH in the deploy workflow). Every
+  internal link and file path goes through here so both work.
+*/
+export const url = (path = '') => `${import.meta.env.BASE_URL}${path}`
+
 /* Page addresses. Each is its own HTML entry (see vite.config.ts). */
 export const PAGES = {
-  home: '/',
-  venue: '/venue/',
-  events: '/events/',
-  gallery: '/gallery/',
-  reviews: '/reviews/',
-  contact: '/contact/',
-} as const
+  home: url(),
+  venue: url('venue/'),
+  events: url('events/'),
+  gallery: url('gallery/'),
+  reviews: url('reviews/'),
+  contact: url('contact/'),
+}
 
 /*
   Your own review quotes. Facebook keeps reviews behind a login, so none are

@@ -1,3 +1,5 @@
+import { url } from './content'
+
 /*
   The only logo file is a photograph of the black monogram decal on a pale,
   shadowed wall. Rather than ship that grey rectangle, an SVG filter turns
@@ -33,7 +35,7 @@ export function LogoMark({ size, alt = '' }: { size: number; alt?: string }) {
   return (
     <span style={{ display: 'block', width: size, height: size, overflow: 'hidden', flex: 'none' }}>
       <img
-        src="/logo.jpg"
+        src={url('logo.jpg')}
         alt={alt}
         width={size}
         height={size}

@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'react'
 import { PHOTOS, type PhotoId } from './photos.gen'
-import { ALT } from './content'
+import { ALT, url } from './content'
 import { useLang } from './i18n'
 
 /*
@@ -29,8 +29,8 @@ export function Photo({
   const s = PHOTOS[id]
   return (
     <img
-      src={`/photos/${id}.webp`}
-      srcSet={`/photos/${id}-sm.webp ${s.sw}w, /photos/${id}.webp ${s.w}w`}
+      src={url(`photos/${id}.webp`)}
+      srcSet={`${url(`photos/${id}-sm.webp`)} ${s.sw}w, ${url(`photos/${id}.webp`)} ${s.w}w`}
       sizes={sizes}
       width={s.w}
       height={s.h}
