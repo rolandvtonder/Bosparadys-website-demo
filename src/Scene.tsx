@@ -191,28 +191,6 @@ export default function Scene() {
             transformOrigin: 'top left',
           }}
         >
-          {/* index rail */}
-          {!m && (
-            <div aria-hidden="true" style={box(L.W - 54, 176, 30, 240)}>
-              {['01', '02', '03', '04', '05'].map((n, i) => (
-                <div
-                  key={n}
-                  className="label"
-                  style={{
-                    position: 'absolute',
-                    top: px(i * 48),
-                    right: 0,
-                    fontSize: px(13),
-                    color: i === Math.min(4, Math.floor(p * 5)) ? GOLD : 'rgba(246,241,231,0.4)',
-                    transition: 'color 200ms ease',
-                  }}
-                >
-                  {n}
-                </div>
-              ))}
-            </div>
-          )}
-
           {/* ================= GROUP 1 — the hero ================= */}
           <div
             inert={off1}
