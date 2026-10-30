@@ -1,8 +1,8 @@
 import { mount } from '../Layout'
 import { useLang } from '../i18n'
-import { VENUE, HERO_PHOTOS, VENUE_PHOTOS, mapsLink, mapsEmbed, waLink } from '../content'
+import { VENUE, HERO_PHOTOS, VENUE_PHOTOS, mapsLink, mapsEmbed, telLink } from '../content'
 import { Photo } from '../Photo'
-import { PageHero, Reveal, SectionHead, CtaBand, Arrow, ChatIcon } from '../ui'
+import { PageHero, Reveal, SectionHead, CtaBand, Arrow, PhoneIcon } from '../ui'
 
 /*
   Venue: each of the four spaces gets its own block (text beside a three-photo
@@ -110,9 +110,9 @@ function Venue() {
                   {t.contact.directions}
                   <Arrow dir="out" />
                 </a>
-                <a href={waLink()} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
-                  <ChatIcon />
-                  {t.cta.whatsapp}
+                <a href={telLink} className="btn btn-ghost">
+                  <PhoneIcon />
+                  {t.contact.call} {VENUE.phoneDisplay}
                 </a>
               </div>
             </Reveal>

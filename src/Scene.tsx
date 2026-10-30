@@ -2,9 +2,9 @@ import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type 
 import { useScroll, useMotionValueEvent, useReducedMotion } from 'motion/react'
 import { SCROLL_VH, P, INTRO, FILM_AT, FADE, DESKTOP, MOBILE, span, ramp, smooth, lerp } from './scroll'
 import { useLang } from './i18n'
-import { VENUE, PAGES, FILM_PHOTOS, SPACE_CARD_PHOTOS, waLink } from './content'
+import { VENUE, PAGES, FILM_PHOTOS, SPACE_CARD_PHOTOS, telLink } from './content'
 import { Photo } from './Photo'
-import { ChatIcon, Arrow } from './ui'
+import { PhoneIcon, Arrow } from './ui'
 
 /*
   The hero film: a sticky stage holding five photographs and a fixed artboard
@@ -249,18 +249,13 @@ export default function Scene() {
                 gap: px(12),
               }}
             >
-              <a href={`${PAGES.contact}#enquiry`} className="btn btn-gold" style={m ? { padding: '0 18px' } : undefined}>
+              <a href={telLink} className="btn btn-gold" style={m ? { padding: '0 18px' } : undefined}>
+                <PhoneIcon />
                 {t.hero.book}
               </a>
-              <a
-                href={waLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-ghost"
-                style={m ? { padding: '0 18px' } : undefined}
-              >
-                <ChatIcon />
-                {t.hero.whatsapp}
+              <a href={PAGES.venue} className="btn btn-ghost" style={m ? { padding: '0 18px' } : undefined}>
+                {t.hero.venue}
+                <Arrow />
               </a>
             </div>
 

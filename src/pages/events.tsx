@@ -1,8 +1,8 @@
 import { mount } from '../Layout'
 import { useLang } from '../i18n'
-import { HERO_PHOTOS, EVENT_PHOTOS, PAGES } from '../content'
+import { HERO_PHOTOS, EVENT_PHOTOS, telLink } from '../content'
 import { Photo } from '../Photo'
-import { PageHero, Reveal, SectionHead, CtaBand, Arrow } from '../ui'
+import { PageHero, Reveal, SectionHead, CtaBand, PhoneIcon } from '../ui'
 
 /*
   Events: one block per kind of event (what it looks like here, with four
@@ -111,9 +111,9 @@ function Events() {
               <div className="glass h-full rounded-[32px] p-8 md:p-10">
                 <h3 className="display m-0 text-[30px] md:text-[34px]">{e.packagesTitle}</h3>
                 <p className="mt-4 mb-0 max-w-[520px] text-[16.5px] leading-[1.65] text-mist">{e.packagesBody}</p>
-                <a href={`${PAGES.contact}#enquiry`} className="btn btn-gold mt-7">
+                <a href={telLink} className="btn btn-gold mt-7">
+                  <PhoneIcon />
                   {e.packagesCta}
-                  <Arrow />
                 </a>
               </div>
             </Reveal>

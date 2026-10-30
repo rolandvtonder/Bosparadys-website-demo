@@ -1,7 +1,7 @@
 import { useLang } from './i18n'
-import { VENUE, PAGES, waLink } from './content'
+import { VENUE, PAGES, waLink, telLink } from './content'
 import { LogoMark } from './Logo'
-import { Eyebrow, Arrow } from './ui'
+import { Eyebrow, Arrow, PhoneIcon } from './ui'
 
 /*
   Footer, structured after the reference: a CTA band, a rule, the brand column
@@ -41,7 +41,8 @@ export default function Footer() {
             <p className="mt-4 mb-0 max-w-[440px] text-[16px] leading-[1.6] text-mist">{f.body}</p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a href={`${PAGES.contact}#enquiry`} className="btn btn-gold">
+            <a href={telLink} className="btn btn-gold">
+              <PhoneIcon />
               {t.nav.book}
             </a>
             <a href={VENUE.facebook} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">

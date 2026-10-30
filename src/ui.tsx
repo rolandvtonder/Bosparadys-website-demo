@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { motion } from 'motion/react'
 import { useLang } from './i18n'
 import { Photo } from './Photo'
-import { PAGES, waLink } from './content'
+import { PAGES, telLink } from './content'
 import type { PhotoId } from './photos.gen'
 
 /*
@@ -57,6 +57,19 @@ export function Arrow({ dir = 'right' }: { dir?: 'right' | 'left' | 'out' | 'dow
   return (
     <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
       <path d={d} stroke="currentColor" strokeWidth="1.7" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+export function PhoneIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true" fill="none">
+      <path
+        d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinejoin="round"
+      />
     </svg>
   )
 }
@@ -151,16 +164,10 @@ export function CtaBand({ photo = 'p063' }: { photo?: PhotoId }) {
               </h2>
               <p className="mt-4 mb-0 text-[17px] leading-[1.6] text-mist">{t.cta.body}</p>
             </div>
-            <div className="flex flex-wrap gap-3">
-              <a href={`${PAGES.contact}#enquiry`} className="btn btn-gold">
-                {t.cta.book}
-                <Arrow />
-              </a>
-              <a href={waLink()} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
-                <ChatIcon />
-                {t.cta.whatsapp}
-              </a>
-            </div>
+            <a href={telLink} className="btn btn-gold">
+              <PhoneIcon />
+              {t.cta.book}
+            </a>
           </div>
         </div>
       </Reveal>

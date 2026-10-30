@@ -12,7 +12,7 @@ export const af: Copy = {
     gallery: 'Galery',
     reviews: 'Resensies',
     contact: 'Kontak',
-    book: 'Bespreek ’n datum',
+    book: 'Bel om te bespreek',
     menu: 'Kieslys',
     close: 'Maak kieslys toe',
     lang: 'Language: English',
@@ -26,8 +26,8 @@ export const af: Copy = {
       'knetterende vuurputte in Zwavelpoort,',
       'gemaak vir elke rede om saam te kuier.',
     ],
-    book: 'Bespreek ’n datum',
-    whatsapp: 'WhatsApp ons',
+    book: 'Bel om te bespreek',
+    venue: 'Sien die lokaal',
     statLabel: ['Gaste wat ons', 'aanbeveel'],
     statNote: 'Uit 28 resensies op Facebook',
     readouts: ['Resensies', 'Volgers', 'Ruimtes'],
@@ -63,9 +63,8 @@ export const af: Copy = {
 
   cta: {
     title: 'Gereed om ’n datum te kies?',
-    body: 'Stuur vir ons jou datum en getal gaste, dan laat weet ons of dit oop is.',
-    book: 'Bespreek ’n datum',
-    whatsapp: 'WhatsApp ons',
+    body: 'Bel ons met jou datum en getal gaste, dan laat weet ons of dit oop is.',
+    book: 'Bel om te bespreek',
   },
 
   venue: {
@@ -132,7 +131,7 @@ export const af: Copy = {
     findEyebrow: 'Hoe om ons te kry',
     findTitle: 'Kry ons in Zwavelpoort',
     findBody:
-      'Bos Paradys is in Graham Road Ext, Zwavelpoort, aan die oostekant van Pretoria. Tik vir aanwysings, of WhatsApp ons as jy hulp nodig het om die hek te kry.',
+      'Bos Paradys is in Graham Road Ext, Zwavelpoort, aan die oostekant van Pretoria. Tik vir aanwysings, of bel ons as jy hulp nodig het om die hek te kry.',
   },
 
   events: {
@@ -175,7 +174,7 @@ export const af: Copy = {
     stepsEyebrow: 'Bespreking',
     stepsTitle: 'Hoe bespreking werk',
     steps: [
-      { t: 'Stuur ’n navraag', d: 'Gebruik die vorm of WhatsApp ons met jou datum, getal gaste en soort geleentheid.' },
+      { t: 'Bel ons', d: 'Bel ons by 072 611 8698 met jou datum, getal gaste en soort geleentheid.' },
       { t: 'Ons antwoord', d: 'Ons bevestig of jou datum oop is en stuur vir jou ’n kwotasie.' },
       { t: 'Maak die datum vas', d: 'Bevestig met ons, dan is die datum joune.' },
       { t: 'Vier fees', d: 'Kom aan, stel op en geniet die bos.' },
@@ -191,8 +190,8 @@ export const af: Copy = {
     ],
     packagesTitle: 'Pakkette & pryse',
     packagesBody:
-      'Elke geleentheid is anders, daarom kwoteer ons per bespreking. Stuur vir ons jou datum, getal gaste en soort geleentheid, dan stuur ons vir jou ’n kwotasie.',
-    packagesCta: 'Vra vir ’n kwotasie',
+      'Elke geleentheid is anders, daarom kwoteer ons per bespreking. Bel ons met jou datum, getal gaste en soort geleentheid, dan gee ons vir jou ’n kwotasie.',
+    packagesCta: 'Bel vir ’n kwotasie',
   },
 
   gallery: {
@@ -229,32 +228,13 @@ export const af: Copy = {
   contact: {
     eyebrow: 'Kontak',
     title: 'Bespreek jou datum',
-    intro: 'Vertel ons van jou geleentheid. Jou boodskap maak in WhatsApp oop, gereed om te stuur, en ons vat dit van daar af.',
-    formTitle: 'Besprekingsnavraag',
-    name: 'Jou naam',
-    phone: 'Telefoonnommer',
-    date: 'Datum van geleentheid',
-    type: 'Soort geleentheid',
-    typePick: 'Kies een',
-    types: ['Verjaarsdag', 'Baba-tee', 'Troue of verlowing', 'Jaareinde of funksie', 'Iets anders'],
-    guests: 'Getal gaste',
-    message: 'Enigiets anders wat ons moet weet?',
-    optional: 'opsioneel',
-    send: 'Stuur op WhatsApp',
-    note: 'Maak WhatsApp oop met jou boodskap reeds ingevul. Niks word gestuur voordat jy daar op stuur druk nie.',
-    errors: {
-      name: 'Voeg asseblief jou naam by sodat ons weet vir wie om te antwoord.',
-      date: 'Kies asseblief die datum wat jy in gedagte het.',
-      type: 'Kies asseblief die soort geleentheid.',
-      summary: '’n Paar besonderhede ontbreek. Kyk asseblief na die gemerkte velde hieronder.',
-    },
-    waIntro: 'Hallo Bos Paradys, ek wil graag navraag doen oor ’n bespreking.',
-    waLabels: { name: 'Naam', phone: 'Telefoon', date: 'Datum', type: 'Geleentheid', guests: 'Gaste', message: 'Boodskap' },
-    reachTitle: 'Ander maniere om ons te bereik',
+    intro: 'Besprekings word per telefoon gedoen. Bel ons met jou datum, getal gaste en soort geleentheid, dan laat weet ons of dit oop is.',
+    callTitle: 'Bel om te bespreek',
+    callBody: 'Hou dit gereed wanneer jy bel',
     call: 'Bel',
-    callBody: 'Praat direk met ons.',
+    reachTitle: 'Vrae? Kontak ons hier',
     whatsapp: 'WhatsApp',
-    whatsappBody: 'Stuur enige tyd vir ons ’n boodskap.',
+    whatsappBody: 'Vrae oor die lokaal.',
     facebook: 'Facebook',
     facebookBody: 'Foto’s, nuus en resensies.',
     findTitle: 'Vind ons',

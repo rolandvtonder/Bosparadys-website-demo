@@ -17,7 +17,7 @@ export const en = {
     gallery: 'Gallery',
     reviews: 'Reviews',
     contact: 'Contact',
-    book: 'Book a date',
+    book: 'Call to book',
     menu: 'Menu',
     close: 'Close menu',
     lang: 'Taal: Afrikaans',
@@ -32,8 +32,8 @@ export const en = {
       'crackling fire pits in Zwavelpoort, made',
       'for every reason to get together.',
     ],
-    book: 'Book a date',
-    whatsapp: 'WhatsApp us',
+    book: 'Call to book',
+    venue: 'See the venue',
     statLabel: ['Guests who', 'recommend us'],
     statNote: 'From 28 reviews on Facebook',
     readouts: ['Reviews', 'Followers', 'Spaces'],
@@ -71,9 +71,8 @@ export const en = {
   /* ---------- shared closing band ---------- */
   cta: {
     title: 'Ready to pick a date?',
-    body: 'Send us your date and guest count and we’ll let you know if it’s open.',
-    book: 'Book a date',
-    whatsapp: 'WhatsApp us',
+    body: 'Call us with your date and guest count and we’ll let you know if it’s open.',
+    book: 'Call to book',
   },
 
   /* ---------- venue page ---------- */
@@ -141,7 +140,7 @@ export const en = {
     findEyebrow: 'Getting here',
     findTitle: 'Find us in Zwavelpoort',
     findBody:
-      'Bos Paradys is on Graham Road Ext in Zwavelpoort, on the eastern side of Pretoria. Tap for directions, or WhatsApp us if you need a hand finding the gate.',
+      'Bos Paradys is on Graham Road Ext in Zwavelpoort, on the eastern side of Pretoria. Tap for directions, or call us if you need a hand finding the gate.',
   },
 
   /* ---------- events page ---------- */
@@ -185,7 +184,7 @@ export const en = {
     stepsEyebrow: 'Booking',
     stepsTitle: 'How booking works',
     steps: [
-      { t: 'Send an enquiry', d: 'Use the booking form or WhatsApp us with your date, guest count and type of event.' },
+      { t: 'Call us', d: 'Phone us on 072 611 8698 with your date, guest count and type of event.' },
       { t: 'Hear back from us', d: 'We confirm whether your date is open and send you a quote.' },
       { t: 'Secure your date', d: 'Confirm with us and the date is yours.' },
       { t: 'Celebrate', d: 'Arrive, set up and enjoy the bush.' },
@@ -201,8 +200,8 @@ export const en = {
     ],
     packagesTitle: 'Packages & pricing',
     packagesBody:
-      'Every event is different, so we quote per booking. Send us your date, guest count and the kind of event, and we’ll come back to you with a quote.',
-    packagesCta: 'Ask for a quote',
+      'Every event is different, so we quote per booking. Call us with your date, guest count and the kind of event, and we’ll give you a quote.',
+    packagesCta: 'Call for a quote',
   },
 
   /* ---------- gallery page ---------- */
@@ -242,32 +241,13 @@ export const en = {
   contact: {
     eyebrow: 'Contact',
     title: 'Book your date',
-    intro: 'Tell us about your event. Your message opens in WhatsApp, ready to send, and we’ll take it from there.',
-    formTitle: 'Booking enquiry',
-    name: 'Your name',
-    phone: 'Phone number',
-    date: 'Event date',
-    type: 'Type of event',
-    typePick: 'Choose one',
-    types: ['Birthday', 'Baby shower', 'Wedding or engagement', 'Year-end or function', 'Something else'],
-    guests: 'Number of guests',
-    message: 'Anything else we should know?',
-    optional: 'optional',
-    send: 'Send on WhatsApp',
-    note: 'Opens WhatsApp with your message filled in. Nothing is sent until you press send there.',
-    errors: {
-      name: 'Please add your name so we know who to reply to.',
-      date: 'Please choose the date you have in mind.',
-      type: 'Please choose the type of event.',
-      summary: 'A few details are missing. Please check the fields marked below.',
-    },
-    waIntro: 'Hi Bos Paradys, I’d like to enquire about a booking.',
-    waLabels: { name: 'Name', phone: 'Phone', date: 'Date', type: 'Event', guests: 'Guests', message: 'Message' },
-    reachTitle: 'Other ways to reach us',
+    intro: 'Bookings are made by phone. Call us with your date, guest count and the kind of event, and we’ll let you know if it’s open.',
+    callTitle: 'Call to book',
+    callBody: 'Have these ready when you call',
     call: 'Call',
-    callBody: 'Talk to us directly.',
+    reachTitle: 'Questions? Reach us here',
     whatsapp: 'WhatsApp',
-    whatsappBody: 'Message us any time.',
+    whatsappBody: 'Questions about the venue.',
     facebook: 'Facebook',
     facebookBody: 'Photos, news and reviews.',
     findTitle: 'Find us',

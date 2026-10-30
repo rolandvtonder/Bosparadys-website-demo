@@ -20,6 +20,9 @@ export const VENUE = {
   followers: 1.8, // thousands
 }
 
+/* Bookings are taken by phone, so every booking button dials this. */
+export const telLink = `tel:${VENUE.phoneTel}`
+
 export const waLink = (text?: string) =>
   `https://wa.me/${VENUE.whatsapp}${text ? `?text=${encodeURIComponent(text)}` : ''}`
 

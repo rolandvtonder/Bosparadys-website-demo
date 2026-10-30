@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLang } from './i18n'
 import { LogoMark } from './Logo'
-import { PAGES } from './content'
+import { PAGES, telLink } from './content'
+import { PhoneIcon } from './ui'
 
 /*
   Navbar, fixed over every page at natural size so it stays readable at any
@@ -104,7 +105,8 @@ export default function Nav() {
 
         <div className="ml-auto flex items-center gap-3">
           <div className="nav-links">{LangToggle}</div>
-          <a href={`${PAGES.contact}#enquiry`} className="btn btn-gold nav-links" style={{ minHeight: 44, padding: '0 20px' }}>
+          <a href={telLink} className="btn btn-gold nav-links" style={{ minHeight: 44, padding: '0 20px' }}>
+            <PhoneIcon />
             {t.nav.book}
           </a>
           <button
@@ -152,7 +154,8 @@ export default function Nav() {
           </ul>
           <div className="mt-5 flex items-center justify-between gap-3">
             {LangToggle}
-            <a href={`${PAGES.contact}#enquiry`} className="btn btn-gold">
+            <a href={telLink} className="btn btn-gold">
+              <PhoneIcon />
               {t.nav.book}
             </a>
           </div>
